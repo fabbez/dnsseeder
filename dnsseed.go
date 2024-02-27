@@ -14,19 +14,19 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/kaspanet/kaspad/app/protocol/common"
-	"github.com/kaspanet/kaspad/infrastructure/config"
-	"github.com/kaspanet/kaspad/infrastructure/network/netadapter/standalone"
+	"github.com/fabbez/topiad/app/protocol/common"
+	"github.com/fabbez/topiad/infrastructure/config"
+	"github.com/fabbez/topiad/infrastructure/network/netadapter/standalone"
 
 	"github.com/pkg/errors"
 
-	"github.com/kaspanet/dnsseeder/version"
-	"github.com/kaspanet/kaspad/infrastructure/network/dnsseed"
-	"github.com/kaspanet/kaspad/util/panics"
-	"github.com/kaspanet/kaspad/util/profiling"
+	"github.com/fabbez/dnsseeder/version"
+	"github.com/fabbez/topiad/infrastructure/network/dnsseed"
+	"github.com/fabbez/topiad/util/panics"
+	"github.com/fabbez/topiad/util/profiling"
 
-	"github.com/kaspanet/kaspad/app/appmessage"
-	"github.com/kaspanet/kaspad/infrastructure/os/signal"
+	"github.com/fabbez/topiad/app/appmessage"
+	"github.com/fabbez/topiad/infrastructure/os/signal"
 
 	_ "net/http/pprof"
 )

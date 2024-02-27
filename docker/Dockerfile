@@ -14,7 +14,7 @@ COPY go.sum .
 # we should use the one in github
 RUN go mod edit -dropreplace github.com/kaspanet/kaspad
 ARG KASPAD_VERSION
-ARG KASPAD_REPOSITORY='github.com/kaspanet/kaspad'
+ARG KASPAD_REPOSITORY='github.com/fabbez/topiad'
 RUN if [ -n "${KASPAD_VERSION}" ]; then \
         # use replace instead of require - to propagate into nested dependancies \
         go mod edit -replace "github.com/kaspanet/kaspad=$KASPAD_REPOSITORY@$KASPAD_VERSION"; \
